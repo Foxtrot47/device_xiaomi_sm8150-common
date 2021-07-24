@@ -9,12 +9,6 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 endif
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -256,6 +250,11 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc
 
+# Overlays
+PRODUCT_PACKAGES += \
+    AOSPASM8150Frameworks \
+    SM8150Frameworks
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
@@ -290,6 +289,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     gps \
     media-legacy \
+    overlay \
     telephony
 
 # RIL
@@ -354,7 +354,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.2.vendor \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
