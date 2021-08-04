@@ -147,6 +147,12 @@ pm.dexopt.first-boot=verify
 pm.dexopt.install=speed-profile
 
 # Display
+debug.sf.early_gl_app_phase_offset_ns=15000000
+debug.sf.early_gl_phase_offset_ns=3000000
+debug.sf.early_phase_offset_ns=500000
+debug.sf.high_fps_early_gl_phase_offset_ns=9000000
+debug.sf.high_fps_early_phase_offset_ns=6100000
+debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 ro.vendor.display.ad=1
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
@@ -170,12 +176,12 @@ vendor.gatekeeper.disable_spu=true
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
-debug.sf.enable_advanced_sf_phase_offset=1
-debug.sf.enable_gl_backpressure=1
-debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
-debug.sf.high_fps_early_phase_offset_ns=-4000000
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
+debug.sf.early_gl_app_phase_offset_ns=15000000
+debug.sf.early_gl_phase_offset_ns=3000000
+debug.sf.early_phase_offset_ns=500000
+debug.sf.high_fps_early_gl_phase_offset_ns=9000000
+debug.sf.high_fps_early_phase_offset_ns=6100000
+debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 debug.sf.latch_unsignaled=1
 persist.sys.sf.color_mode=0
 persist.sys.sf.native_mode=0
