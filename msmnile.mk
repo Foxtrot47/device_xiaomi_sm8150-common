@@ -53,7 +53,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
@@ -168,34 +167,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
 
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
-
-# Display
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-impl \
-    android.hardware.graphics.composer@2.4-service \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.msmnile \
-    hwcomposer.msmnile \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
-    libqdMetaData \
-    libsdmcore \
-    libsdmutils \
-    libtinyxml \
-    libvulkan \
-    memtrack.msmnile \
-    vendor.display.config@1.5 \
-    vendor.display.config@1.11.vendor \
-    vendor.display.config@2.0 \
-    vendor.display.config@2.0.vendor \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -339,6 +310,10 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    display
 
 # RIL
 PRODUCT_PACKAGES += \
