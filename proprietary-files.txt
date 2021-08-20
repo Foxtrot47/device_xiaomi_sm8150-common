@@ -565,8 +565,6 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media - from LA.UM.9.1.r1-10900-SMxxx0.0
-vendor/bin/hw/vendor.qti.media.c2@1.0-service|83c2effb6f76cb095bae840d95a2026014d92fe9
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
 vendor/lib/libMpeg4SwEncoder.so|84a45ff9fe85103cbe37de2f52ff60a5d8f7e6c5
 vendor/lib/libOmxAacDec.so|252aef7117fd026653b8a26d95ee41437fb64e3c
 vendor/lib/libOmxAlacDec.so|c61bfc85d12207c4cc88a676a608cf8aa93e4b01

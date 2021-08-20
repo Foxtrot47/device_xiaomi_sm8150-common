@@ -182,7 +182,6 @@ persist.sys.sf.native_mode=0
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
 
 # Media
-debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 
 # OTG
