@@ -283,6 +283,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     gps \
     media-legacy \
     overlay \
+    perf \
     telephony \
     usb \
     vibrator \
