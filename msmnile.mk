@@ -245,6 +245,10 @@ PRODUCT_PACKAGES += \
     AOSPASM8150Frameworks \
     SM8150Frameworks
 
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
