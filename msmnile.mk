@@ -152,8 +152,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat64.enabled=true
 
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
