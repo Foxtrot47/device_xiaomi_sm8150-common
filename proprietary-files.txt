@@ -743,11 +743,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/libwvhidl.so
 
-# WiFi
-vendor/bin/cnss-daemon
-vendor/etc/wifi/aoa_cldb_falcon.bin
-vendor/etc/wifi/aoa_cldb_swl14.bin
-
 # WiFi Display - from LA.UM.9.1.r1-10900-SMxxx0.0
 -framework/WfdCommon.jar|de1adc7a4adbb117123aa5bb116c5df83c686433
 system_ext/bin/wfdservice|633136fd78d4e7ad99e18e060c44ebe598271c84
