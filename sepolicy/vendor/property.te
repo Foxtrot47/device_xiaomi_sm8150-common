@@ -1,3 +1,5 @@
+type deviceid_prop, property_type;
+
 type power_prop, property_type;
 
 type thermal_normal_prop, property_type;
