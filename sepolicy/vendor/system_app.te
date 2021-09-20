@@ -3,4 +3,9 @@ allow system_app vendor_sysfs_battery_supply:file { read };
 allow system_app vendor_sysfs_battery_supply:file { open };
 allow system_app vendor_sysfs_battery_supply:file { getattr };
 
+allow system_app sysfs_msm_subsys:dir { search };
+allow system_app sysfs_msm_subsys:file { read };
+allow system_app sysfs_msm_subsys:file { open };
+allow system_app sysfs_msm_subsys:file { getattr };
+
 r_dir_file(system_app, vendor_sysfs_battery_supply)
